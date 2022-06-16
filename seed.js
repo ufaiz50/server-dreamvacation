@@ -2,11 +2,7 @@ var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
-seeder.connect('mongodb://localhost:27017/db_staycation', {
-  useNewUrlParser: true,
-  useFindAndModify: true,
-  useUnifiedTopology: true
-}, function () {
+seeder.connect('mongodb+srv://dbdreamvacation:polkiu1997@cluster0.mxxd8.mongodb.net/db_dreamvacation?retryWrites=true&w=majority', function () {
 
   // Load Mongoose models
   seeder.loadModels([
